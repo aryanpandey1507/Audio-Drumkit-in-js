@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1 id="heading">Enjoy the Audio-Drumkit..</h1> 
+<h1 id="heading">Press the denoted keyboard key to listen to the given lofi</h1> 
+<div class="container">
+    <!--data-key is not an attribute it is made to differentiate each key,To get rid of these issues, HTML5 has introduced custom data attributes. All attributes on an element whose name starts with data- are data attributes. You can also use these data attributes to style your elements.-->
+    <div class="key" data-key="77"><kbd>M</kbd><span>Cruisin Along</span></div>  <!--every key has an attributed key code , by which it can be distinguished-->
+    <div class="key" data-key="85"><kbd>U</kbd><span>Looking Up</span></div>
+    <div class="key" data-key="83"><kbd>S</kbd><span>Mellow Thoughts</span></div>
+    <div class="key" data-key="73"><kbd>I</kbd><span>Reaching Out</span></div>
+    <div class="key" data-key="67"><kbd>C</kbd><span>Tropical Keys</span></div>
+</div>
+<h3><b>Press SHIFT to END the music</b></h3>
+<audio src="Cruisin Along.mp3"   data-key="77"></audio>
+<audio src="Looking Up.mp3"      data-key="85"></audio>
+<audio src="Mellow Thoughts.mp3" data-key="83"></audio>
+<audio src="Reaching out.mp3"    data-key="73"></audio>
+<audio src="Tropical keys.mp3"   data-key="67"></audio>
+</body>
+<script src="app.js"></script>    
+
+</html>
